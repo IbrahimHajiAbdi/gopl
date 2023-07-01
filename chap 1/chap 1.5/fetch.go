@@ -31,7 +31,7 @@ func main() {
 			fmt.Fprintf(os.Stderr, "fetch: reading %s: %v\n", url, err)
 			os.Exit(1)
 		}
-		fmt.Printf("http response code: %d\n", resp.StatusCode)
+		fmt.Printf("http response code: %s\n", resp.Status)
 	}
 }
 
